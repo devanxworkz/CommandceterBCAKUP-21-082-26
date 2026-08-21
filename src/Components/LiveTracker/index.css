@@ -1,0 +1,17 @@
+.rotating-scooter img {
+  transition: transform 0.3s linear;
+}
+
+
+.scooter-marker {
+  transition: transform 0s !important;
+  will-change: transform;
+}
+
+
+.leaflet-marker-icon {
+  will-change: transform;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+}
+

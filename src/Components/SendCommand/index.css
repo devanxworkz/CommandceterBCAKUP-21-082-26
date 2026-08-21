@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard {
+  background: #0a0a0a;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP MENU */
+
+.topbar {
+  display: flex;
+  gap: 20px;
+  padding: 15px 25px;
+  background: #111;
+  border-bottom: 1px solid #333;
+}
+
+.topbar button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.topbar button:hover {
+  color: orange;
+}
+
+/* MAIN LAYOUT */
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 250px;
+  background: #111;
+  border-right: 1px solid #333;
+  padding: 20px;
+}
+
+.command {
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background: #1a1a1a;
+  border-radius: 6px;
+}
+
+.command:hover {
+  background: #222;
+}
+
+.command.active {
+  background: orange;
+  color: black;
+}
+
+/* SETTINGS PANEL */
+
+.settings {
+  flex: 1;
+  padding: 40px;
+}
+
+/* CARD */
+
+.card {
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  border: 1px solid #333;
+}
+
+.card h2 {
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.card label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #0a0a0a;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 6px;
+}
+
+/* BUTTON */
+
+.send-btn {
+  background: orange;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.send-btn:hover {
+  background: #ff8800;
+}
+
+/* Modern slider */
+
+.custom-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;                /* thin track */
+  border-radius: 10px;
+  background: #444;
+  outline: none;
+}
+
+/* Track filled color (Chrome/Safari) */
+.custom-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(90deg,#00d4ff,#0078ff);
+}
+
+/* Big round thumb */
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #00aaff;
+  cursor: pointer;
+  margin-top: -8px;
+  box-shadow: 0 0 10px rgba(0,170,255,0.8);
+}
+
+/* Firefox */
+.custom-slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #00aaff;
+  cursor: pointer;
+}
+
+/* Thin slider track */
+.thin-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;               /* VERY THIN LINE */
+  background: #888;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Chrome / Edge / Safari track */
+.thin-slider::-webkit-slider-runnable-track {
+  height: 2px;
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Big round knob */
+.thin-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 35px;              /* BIG circle */
+  width: 35px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #ec9006;
+  margin-top: -16px;         /* centers the circle */
+  cursor: pointer;
+}
+
+/* Firefox */
+.thin-slider::-moz-range-track {
+  height: 2px;
+  background: #888;
+}
+
+.thin-slider::-moz-range-thumb {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #00aaff;
+  cursor: pointer;
+}

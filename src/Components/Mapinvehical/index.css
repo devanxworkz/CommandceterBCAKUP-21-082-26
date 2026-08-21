@@ -1,0 +1,56 @@
+h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+p {
+  margin: 2px 0;
+  font-size: 12px;
+}
+
+
+/* Remove default white popup background */
+.leaflet-popup-content-wrapper {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-tip {
+  background: #0d0d0d !important;
+}
+
+/* Custom Card */
+.popup-card {
+  background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
+  border: 1px solid rgba(255, 140, 0, 0.4);
+  border-radius: 14px;
+  padding: 14px;
+  min-width: 220px;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+/* Header */
+.popup-header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff9800;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 140, 0, 0.3);
+  padding-bottom: 6px;
+}
+
+/* Body */
+.popup-body div {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #ddd;
+}
+
+.popup-body span {
+  color: #ff9800;
+  font-weight: 500;
+}
